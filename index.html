@@ -1,29 +1,39 @@
+<!--
+ЛАБОРАТОРНАЯ РАБОТА ПО ИНФОРМАЦИОННОЙ БЕЗОПАСНОСТИ
+Имитация фишингового письма. Учебный проект.
+-->
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Учебный проект — Фишинг-симуляция</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
-        .warning { color: red; font-weight: bold; margin-bottom: 20px; }
-        form { background: white; padding: 20px; border: 1px solid #ccc; }
-    </style>
+  <meta charset="UTF-8">
+  <title>ИТ-поддержка: Требуется подтверждение аккаунта</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    .email { max-width: 650px; background: white; padding: 25px; margin: 0 auto; border: 1px solid #eee; }
+    .header { color: #1a56db; border-bottom: 2px solid #1a56db; padding-bottom: 10px; }
+  </style>
 </head>
 <body>
-    <div class="warning">
-        ⚠️ УЧЕБНАЯ СИМУЛЯЦИЯ. НИКАКИЕ ДАННЫЕ НЕ СОХРАНЯЮТСЯ. НЕ ВВОДИТЕ РЕАЛЬНЫЕ ЛОГИНЫ И ПАРОЛИ!
+  <div class="email">
+    <div class="header">
+      <h2>ИТ-поддержка Учебного портала</h2>
     </div>
 
-    <h2>SecureBank Lab — Тестовый вход</h2>
-    <form onsubmit="alert('⚠️ Это учебный проект. Данные не отправляются.'); return false;">
-        Логин: <input type="text" name="username" placeholder="test_user"><br><br>
-        Пароль: <input type="password" name="password" placeholder="******"><br><br>
-        <button type="submit">Войти</button>
-    </form>
+    <p>Уважаемый студент,</p>
 
-    <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
-        Этот сайт создан для лабораторной работы по информационной безопасности.
-        Цель — понять, как выглядят фишинговые сайты и как их распознавать.
+    <p>В ходе мониторинга безопасности обнаружена <strong>неавторизованная попытка входа</strong> в ваш аккаунт учебного портала.</p>
+
+    <p>Для защиты вашего аккаунта необходимо <strong>подтвердить свою учётную запись</strong> в течение <strong>24 часов</strong>.</p>
+
+    <p>
+      <a href="https://syuznsyuzn22-web.github.io/laba5/" 
+         style="background: #d32f2f; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; font-weight: bold;">
+        Подтвердить аккаунт
+      </a>
     </p>
+
+    <p>Если вы не совершали вход — проигнорируйте это письмо.</p>
+  </div>
 </body>
 </html>
